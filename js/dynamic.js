@@ -17,7 +17,7 @@ function sizeBody(){
 }
 
 $('head').append('<title>'+pageTitle+'</title>');
-var header ='<table class="head"><tr><td><img src="img/tt.png" class="icon" style="vertical-align:middle;" /></td><td><h1>'+pageTitle+'</h1></td></tr></table>';
+var header ='<table class="head"><tr><td><img src="img/logo.png" class="icon" style="vertical-align:middle;" /></td><td><h1>'+pageTitle+'</h1></td></tr></table>';
 $('#header').html(header);
 
 var up = '^ <span style="font-weight:bold;">TOP</span> ^';
@@ -49,7 +49,7 @@ $(document).ready(function(){
         loop: false,
         autoplay: false,
         byline: false,
-        color: "00adef",
+        color: "124fb3",
         maxheight: '',
         maxwidth: '',
         portrait: true,
