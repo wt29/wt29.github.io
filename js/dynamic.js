@@ -1,5 +1,5 @@
-var pages = ["Home", "Calibration", "Troubleshooting", "Upgrade Guides", "Diagonal Z Hop", "Review Policy", "Sponsors", "Contact"]
-var urls = ["index.html", "calibration.html", "troubleshooting.html", "upgrades.html", "diagonalZhop.html", "reviewpolicy.html", "sponsors.html", "contact.html"]
+var pages = ["Home", "Design", "Print", "Carve", "Contact"]
+var urls = ["index.html", "design.html", "print.html", "carve.html", "contact.html"]
 var menu = '<img src="img/ttwhite.png" />';
 var tab;
 for(var i = 0; i < pages.length; i++){
@@ -9,7 +9,7 @@ for(var i = 0; i < pages.length; i++){
     }
     menu += '>'+pages[i]+'</a>';
 }
-menu += '<span id="donate">Useful? Considering supporting me: <a href="https://paypal.me/testlawgicau" target="_blank"><img class="icon" src="img/paypal.png" /></a><a href="http://www.patreon.com/teachingtech" target="_blank"><img class="icon" src="img/patreon.png" /></a></span>';
+// menu += '<span id="donate">Useful? Considering supporting me: <a href="https://paypal.me/testlawgicau" target="_blank"><img class="icon" src="img/paypal.png" /></a><a href="http://www.patreon.com/teachingtech" target="_blank"><img class="icon" src="img/patreon.png" /></a></span>';
 $('#menu').html(menu);
 function sizeBody(){
     var menuClearance = $('#menu').outerHeight()+30;
