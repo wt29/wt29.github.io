@@ -8,48 +8,19 @@
 <body>
     <div id="menu"></div>
     <div id="header"></div>
-    <div>
-                <img src="img/signs.jpg" alt="Image 1">
-                <img src="img/StreetLibrary.jpg" alt="Image 2">
-                <img src="img/RouterHead.jpg" alt="Image 3">
-        </div>
+    <h5>Signs printed and painted for the local community garden</h5>
+    <img src="img/signs.jpg" alt="Image 1">
+    <h5>Street library - CNC cut featuring 3D printed Signs </h5>
+    <img src="img/StreetLibrary.jpg" alt="Image 2">
+    <h5>CNC Router ready for work</h5>
+    <img src="img/RouterHead.jpg" alt="Image 3">
 
-        <!--        <img src="img/signs.png" alt="Garden signs carved and printed" width="500" height="300"> -->
-
-    </div>
 </body>
 <script>
     var pageName = "TG3D Carve";
     var pageTitle = "TG3D - Carve";
-
-    // JavaScript for the carousel
-    var carouselItems = document.querySelectorAll('.carousel-item');
-    var prevButton = document.querySelector('.carousel-control.prev');
-    var nextButton = document.querySelector('.carousel-control.next');
-    var currentIndex = 0;
-
-    function showSlide(n) {
-        carouselItems[currentIndex].classList.remove('active');
-        currentIndex = (n + carouselItems.length) % carouselItems.length;
-        carouselItems[currentIndex].classList.add('active');
-    }
-
-    function prevSlide() {
-        showSlide(currentIndex - 1);
-    }
-
-    function nextSlide() {
-        showSlide(currentIndex + 1);
-    }
-
-    // Event listeners for the previous/next buttons
-    prevButton.addEventListener('click', prevSlide);
-    nextButton.addEventListener('click', nextSlide);
-
-    // Start the carousel automatically
-    setInterval(nextSlide, 5000);
-
 </script>
+
 <script src="js/dynamic.js"></script>
 
 </html>
