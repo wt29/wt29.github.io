@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="js/loadscripts.js"></script>
-    </head>
+
+<head>
+    <script src="js/loadscripts.js"></script>
+</head>
+
 <body>
     <div id="menu"></div>
     <div id="header"></div>
     <div>
-        <img src="img/signs.png" alt="Garden signs carved and printed" width="500" height="300">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="img/signs.jpg" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/StreetLibrary.jpg" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/logo.png" alt="Image 3">
+            </div>
+            <div class="carousel-control prev">&#10094;</div>
+            <div class="carousel-control next">&#10095;</div>
+        </div>
+
+        <!--        <img src="img/signs.png" alt="Garden signs carved and printed" width="500" height="300"> -->
 
     </div>
 </body>
 <script>
-  var pageName = "TG3D Carve";
-  var pageTitle="TG3D - Carve";
+    var pageName = "TG3D Carve";
+    var pageTitle = "TG3D - Carve";
+
+    // JavaScript for the carousel
+    var carouselItems = document.querySelectorAll('.carousel-item');
+    var prevButton = document.querySelector('.carousel-control.prev');
+    var nextButton = document.querySelector('.carousel-control.next');
+    var currentIndex = 0;
+
+    function showSlide(n) {
+        carouselItems[currentIndex].classList.remove('active');
+        currentIndex = (n + carouselItems.length) % carouselItems.length;
+        carouselItems[currentIndex].classList.add('active');
+    }
+
+    function prevSlide() {
+        showSlide(currentIndex - 1);
+    }
+
+    function nextSlide() {
+        showSlide(currentIndex + 1);
+    }
+
+    // Event listeners for the previous/next buttons
+    prevButton.addEventListener('click', prevSlide);
+    nextButton.addEventListener('click', nextSlide);
+
+    // Start the carousel automatically
+    setInterval(nextSlide, 5000);
+
 </script>
 <script src="js/dynamic.js"></script>
+
 </html>

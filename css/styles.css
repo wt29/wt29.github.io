@@ -529,3 +529,52 @@ button {
 
 	cursor: pointer;
 } 
+
+/* Style for the carousel container */
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Style for the carousel items */
+.carousel-item {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+/* Style for the previous/next buttons */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Style for the next button */
+.carousel-control.next {
+    right: 0;
+}
+
+/* Style for the previous button */
+.carousel-control.prev {
+    left: 0;
+}
+
+/* Style for the active item */
+.carousel-item.active {
+    opacity: 1;
+}
+
+/* Style for the inactive items */
+.carousel-item:not(.active) {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
