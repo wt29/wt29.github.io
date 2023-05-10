@@ -1,5 +1,5 @@
-var pages = ["Home", "Design", "Print", "Carve", "Contact"]
-var urls = ["index.html", "design.html", "print.html", "carve.html", "contact.html"]
+var pages = ["Home", "Design", "Print", "Carve", "Disability", "Education", "Contact"]
+var urls = ["index.html", "design.html", "print.html", "carve.html", "disability.html", "education.html", "contact.html"]
 var menu = '<img src="img/logo.png" />';
 var tab;
 for(var i = 0; i < pages.length; i++){
