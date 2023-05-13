@@ -556,7 +556,7 @@ button {
   
   .splide__slide img {
     width: 100%;
-    height: auto;
+    height: 550;
     object-fit: cover;
   }
 

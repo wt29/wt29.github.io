@@ -3,8 +3,14 @@
     <head>
         <script src="js/loadscripts.js"></script>
         <link rel="icon" href="img/favicon.ico">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-skyblue.min.css"  />
+        <link rel="stylesheet" href="css/splide.min.css"  />
         <script src="js/splide.min.js"></script> 
+        <script>
+            document.addEventListener( 'DOMContentLoaded', function() {
+              var splide = new Splide( '.splide' );
+              splide.mount();
+            } );
+          </script>
     </head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R99PM7PTJH"></script>
@@ -19,91 +25,46 @@
 <body>
     <div id="menu"></div>
     <div id="header"></div>
-    <p>This page is very much "in development"</p>
     <section id="main-slider" class="splide" aria-label="Product">
         <div class="splide__track">
           <ul class="splide__list">
-            <div>CNC Clamps</div>
             <li class="splide__slide">
-                <img  src="img/CNCClamps.jpg" alt="" />
-            </li>
-            <div>CNC Clamps</div>
-            <li class="splide__slide">
-              <img
-                src="img/CNCDetail.jpg"
-                alt=""
-              />
+                <img  src="img/CNCClamps.jpg" alt="Clamps" />
+                <div>CNC Clamps</div>
             </li>
             <li class="splide__slide">
-              <img
-                src="img/AudiA4.jpg"
-                alt=""
-              />
+              <img src="img/DustBoot.jpg"  alt="Dust Boot"  />
             </li>
             <li class="splide__slide">
-              <img
-                src="img/Cropped_polished800x600.jpg"
-                alt=""
-              />
+              <img src="img/AudiA4SwitchBlock.jpg" alt="Audi A4 Switches" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/DoubleAnderson.jpg" alt="Anderson Cover" />
             </li>
           </ul>
         </div>
       </section>
-  <!---
+  
       <ul id="thumbnails" class="thumbnails">
         <li class="thumbnail">
           <img src="img/CNCClamps.jpg" alt="" />
         </li>
         <li class="thumbnail">
-          <img src="img/CNCDetail.jpg" alt="" />
+          <img src="img/DustBoot.jpg" alt="" />
         </li>
         <li class="thumbnail">
-          <img src="img/AudiA4.JPG" alt="" />
+          <img src="img/AudiA4SwitchBlock.jpg" alt="" />
         </li>
         <li class="thumbnail">
-          <img src="img/Cropped_polished800x600.jpg" alt="" />
+          <img src="img/DoubleAnderson.jpg" alt="" />
         </li>
       </ul>
-    -->
+  
   </body>
 <script>
   var pageName = "Print";
   var pageTitle="TG3D - Print Examples of our designs";
 
-  var splide = new Splide("#main-slider", {
-        width: 800,
-        height: 600,
-        pagination: false,
-        cover: true
-      });
-
-      var thumbnails = document.getElementsByClassName("thumbnail");
-      var current;
-
-      for (var i = 0; i < thumbnails.length; i++) {
-        initThumbnail(thumbnails[i], i);
-      }
-
-      function initThumbnail(thumbnail, index) {
-        thumbnail.addEventListener("click", function () {
-          splide.go(index);
-        });
-      }
-
-      splide.on("mounted move", function () {
-        var thumbnail = thumbnails[splide.index];
-
-        if (thumbnail) {
-          if (current) {
-            current.classList.remove("is-active");
-          }
-
-          thumbnail.classList.add("is-active");
-          current = thumbnail;
-        }
-      });
-
-      splide.mount();
 </script>
 <script src="js/dynamic.js"></script>
 </html>
