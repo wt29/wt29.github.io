@@ -3,13 +3,15 @@
     <head>
         <script src="js/loadscripts.js"></script>
         <link rel="icon" href="img/favicon.ico">
-        <link rel="stylesheet" href="css/splide.min.css"  />
+        <link rel="stylesheet" href="css/splide-skyblue.min.css"  />
         <script src="js/splide.min.js"></script> 
         <script>
             document.addEventListener( 'DOMContentLoaded', function() {
-              var splide = new Splide( '.splide' );
-              splide.mount();
+              var splide = new Splide( '.splide', {
+              autowidth: true,  
             } );
+            splide.mount();
+        });
           </script>
     </head>
     <!-- Google tag (gtag.js) -->
@@ -25,26 +27,33 @@
 <body>
     <div id="menu"></div>
     <div id="header"></div>
-    <section id="main-slider" class="splide" aria-label="Product">
+    <section class="splide" aria-label="ProductS">
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
-                <img  src="img/CNCClamps.jpg" alt="Clamps" />
-                <div>CNC Clamps</div>
+                <img src="img/CNCClamps.jpg" alt="Clamps" />
+                <div class="splide__txt">CNC Clamps, push pins and rails. Allows easy hold-down of work for carving. The Clamps
+                    are angled down 5 degrees to assist in hold-down.
+                </div>
             </li>
             <li class="splide__slide">
               <img src="img/DustBoot.jpg"  alt="Dust Boot"  />
+              <div class="splide__txt">This is a printed dustboot. It is designed to suit a Makita Trim router. The bottom plate is held on by
+                4mm magnets.</div>
             </li>
             <li class="splide__slide">
-              <img src="img/AudiA4SwitchBlock.jpg" alt="Audi A4 Switches" />
+                <img src="img/AudiA4SwitchBlock.jpg" alt="Audi A4 Switches" />
+                <div class="splide__txt">This was a long running project which took over 70 iterations to get right. 
+                In the end, a completely different design tack was required</div>
             </li>
             <li class="splide__slide">
               <img src="img/DoubleAnderson.jpg" alt="Anderson Cover" />
+              <div class="splide__txt">Holds 2x 50A Anderson plugs. It features dust caps secured by stainless wire</div>
             </li>
           </ul>
         </div>
       </section>
-  
+<!--  
       <ul id="thumbnails" class="thumbnails">
         <li class="thumbnail">
           <img src="img/CNCClamps.jpg" alt="" />
@@ -59,7 +68,7 @@
           <img src="img/DoubleAnderson.jpg" alt="" />
         </li>
       </ul>
-  
+    -->
   </body>
 <script>
   var pageName = "Print";
