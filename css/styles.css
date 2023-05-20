@@ -549,7 +549,11 @@ button {
     background: #3B5998;  
     color: white;  
   }  
-  
+  .fa-etsy {  
+    background: white;  
+    color: #eb6d20;  
+  }  
+
   .splide {
     margin: 1 auto;
   }
