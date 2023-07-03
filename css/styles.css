@@ -108,7 +108,13 @@ p {
     line-height: 1.5em;
 }
 
-textarea {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  textarea {
     display: block;
     margin: 0 20px;
     width: 90%;
