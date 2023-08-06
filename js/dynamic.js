@@ -1,5 +1,5 @@
-var pages = ["Home", "Design", "Print", "Carve", "Disability", "Education", "Contact"]
-var urls = ["index.html", "design.html", "print.html", "carve.html", "disability.html", "education.html", "contact.html"]
+var pages = ["Home", "Design", "Carve", "Disability", "Education", "Contact"]
+var urls = ["index.html", "design.html", "carve.html", "disability.html", "education.html", "contact.html"]
 var menu = '<img src="img/logo.png" />';
 var tab;
 for(var i = 0; i < pages.length; i++){
@@ -9,7 +9,6 @@ for(var i = 0; i < pages.length; i++){
     }
     menu += '>'+pages[i]+'</a>';
 }
-// menu += '<span id="donate">Useful? Considering supporting me: <a href="https://paypal.me/testlawgicau" target="_blank"><img class="icon" src="img/paypal.png" /></a><a href="http://www.patreon.com/teachingtech" target="_blank"><img class="icon" src="img/patreon.png" /></a></span>';
 $('#menu').html(menu);
 function sizeBody(){
     var menuClearance = $('#menu').outerHeight()+30;
