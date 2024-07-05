@@ -602,3 +602,9 @@ button {
     width: 100%;
     height: auto;
   }
+
+  th, td {
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+ 
