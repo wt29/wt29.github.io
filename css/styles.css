@@ -90,7 +90,7 @@ h4 {
 
 h5 {
     margin: 20px;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 1.4em;
 }
 
@@ -120,6 +120,12 @@ ul {
     width: 90%;
     font-size: 1.4em;
 }
+
+img {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+  }
 
 table.head {
     border-collapse: collapse;
