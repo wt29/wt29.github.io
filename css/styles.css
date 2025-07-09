@@ -554,7 +554,7 @@ button {
 
   .fa {  
     padding: 20px;  
-  text-align: center;  
+    text-align: center;  
     margin: 5px 2px;  
     font-size: 30px;  
     width: 50px;  
@@ -566,6 +566,10 @@ button {
   .fa-etsy {  
     background: white;  
     color: #eb6d20;  
+  }  
+  .fa-ebay {  
+    background: white;  
+    color: #e8eb20;  
   }  
 
   .splide {
