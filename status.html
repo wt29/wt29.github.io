@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TG3D - Status</title>
   <meta name="description" content="Home power status.">
-  <meta name="theme-color" content="#1b1f23">
+  <meta name="theme-color" content="#101a45">
   <meta name="robots" content="noindex">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TG3D">
   <meta property="og:title" content="TG3D - Status">
   <meta property="og:description" content="Home power status.">
   <link rel="icon" href="img/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+  <link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R99PM7PTJH"></script>
@@ -29,9 +28,10 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
-      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home" width="544" height="424"></a>
+      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home - Design Print Carve" width="544" height="424"></a>
       <a href="index.html">Home</a>
       <a href="design.html">Design</a>
+      <a href="print.html">Print</a>
       <a href="carve.html">Carve</a>
       <a href="disability.html">Disability</a>
       <a href="education.html">Education</a>
@@ -39,21 +39,27 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <div class="page-title">
-    <img src="img/logo.png" alt="" width="544" height="424">
-    <h1>Status</h1>
-  </div>
   <main id="main">
-    <h3>Power status at Tue  1 Oct 13:00:02 AEST 2024</h3>
-    <table style="width:600px; max-width:100%;">
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Status</h1>
+    </div>
+  </div>
+  <div class="wrap">
+    <h2>Power status at Tue 1 Oct 13:00:02 AEST 2024</h2>
+    <table class="status-table">
       <tr><td>Grid</td><td><b>-2951.95</b></td></tr>
       <tr><td>Solar</td><td><b>3302.61</b></td></tr>
       <tr><td>Big Air</td><td><b>2.87</b></td></tr>
       <tr><td>Outside C</td><td><b>23.46</b></td></tr>
     </table>
+  </div>
   </main>
   <footer class="site-footer">
-    <p>TG3D &middot; Blue Mountains, NSW &middot; <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    <div class="wrap">
+      <p>TG3D &ndash; Design Print Carve. Blue Mountains, NSW.</p>
+      <p><a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    </div>
   </footer>
 </body>
 </html>

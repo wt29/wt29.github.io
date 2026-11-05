@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TG3D - Print examples of our designs</title>
+  <title>TG3D - 3D printing: examples of our work</title>
   <meta name="description" content="Examples of 3D printed designs by TG3D: CNC clamps, a router dust boot, Audi switch caps and Anderson plug covers.">
-  <meta name="theme-color" content="#1b1f23">
+  <meta name="theme-color" content="#101a45">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TG3D">
-  <meta property="og:title" content="TG3D - Print examples of our designs">
+  <meta property="og:title" content="TG3D - 3D printing: examples of our work">
   <meta property="og:description" content="Examples of 3D printed designs by TG3D: CNC clamps, a router dust boot, Audi switch caps and Anderson plug covers.">
   <link rel="icon" href="img/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+  <link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/splide-core.min.css">
   <link rel="stylesheet" href="css/splide-skyblue.min.css">
@@ -30,9 +29,10 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
-      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home" width="544" height="424"></a>
+      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home - Design Print Carve" width="544" height="424"></a>
       <a href="index.html">Home</a>
       <a href="design.html">Design</a>
+      <a href="print.html" aria-current="page">Print</a>
       <a href="carve.html">Carve</a>
       <a href="disability.html">Disability</a>
       <a href="education.html">Education</a>
@@ -40,30 +40,33 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <div class="page-title">
-    <img src="img/logo.png" alt="" width="544" height="424">
-    <h1>Print</h1>
-  </div>
   <main id="main">
-    <section class="splide" aria-label="Products">
+  <div class="page-head">
+    <div class="wrap">
+      <h1>3D printing</h1>
+      <p class="lead">FDM and SLA printing for prototypes, custom aids and school projects. Here are a few things we've printed.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <section class="splide" aria-label="3D printed projects">
       <div class="splide__track">
         <ul class="splide__list">
-        <li class="splide__slide">
-          <img src="img/CNCClamps.jpg" alt="CNC clamps, push pins and rails" width="640" height="480">
-          <div class="splide__txt">CNC Clamps, push pins and rails. Allows easy hold-down of work for carving. The Clamps are angled down 5 degrees to assist in hold-down.</div>
-        </li>
-        <li class="splide__slide">
-          <img src="img/dustboot.jpg" alt="Printed dust boot" width="640" height="480">
-          <div class="splide__txt">This is a printed dustboot. It is designed to suit a Makita Trim router. The bottom plate is held on by 4mm magnets.</div>
-        </li>
-        <li class="splide__slide">
-          <img src="img/AudiA4SwitchBlock.jpg" alt="Audi A4 switch block" width="640" height="480">
-          <div class="splide__txt">This was a long running project which took over 70 iterations to get right. In the end, a completely different design tack was required</div>
-        </li>
-        <li class="splide__slide">
-          <img src="img/DoubleAnderson.jpg" alt="Double Anderson plug cover" width="640" height="480">
-          <div class="splide__txt">Holds 2x 50A Anderson plugs. It features dust caps secured by stainless wire</div>
-        </li>
+          <li class="splide__slide">
+            <img src="img/CNCClamps.jpg" alt="CNC clamps, push pins and rails" width="640" height="480">
+            <div class="splide__txt">CNC clamps, push pins and rails. Allows easy hold-down of work for carving. The clamps are angled down 5 degrees to assist in hold-down.</div>
+          </li>
+          <li class="splide__slide">
+            <img src="img/dustboot.jpg" alt="Printed dust boot" width="640" height="480">
+            <div class="splide__txt">This is a printed dust boot. It is designed to suit a Makita trim router. The bottom plate is held on by 4mm magnets.</div>
+          </li>
+          <li class="splide__slide">
+            <img src="img/AudiA4SwitchBlock.jpg" alt="Audi A4 switch block" width="640" height="480">
+            <div class="splide__txt">This was a long running project which took over 70 iterations to get right. In the end, a completely different design tack was required.</div>
+          </li>
+          <li class="splide__slide">
+            <img src="img/DoubleAnderson.jpg" alt="Double Anderson plug cover" width="640" height="480">
+            <div class="splide__txt">Holds 2x 50A Anderson plugs. It features dust caps secured by stainless wire.</div>
+          </li>
         </ul>
       </div>
     </section>
@@ -71,9 +74,22 @@
     <script>
       new Splide('.splide', { type: 'loop' }).mount();
     </script>
+  </div>
+  <section class="band" aria-labelledby="band-title">
+    <div class="wrap band-inner">
+      <div>
+        <h2 id="band-title">Got an idea?</h2>
+        <p>Tell us what you need and we'll quote it. Email <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+      </div>
+      <a class="btn btn-primary" href="mailto:tony@tg3d.com.au?subject=Quote%20request&amp;body=Hi%20Tony%2C%0A%0AI%27d%20like%20a%20quote%20for%3A%0A%0AWhat%20I%20need%20%28design%2C%203D%20print%2C%20CNC%20carve%29%3A%0A%0AWhat%20it%27s%20for%3A%0A%0ASize%2C%20material%20or%20colour%20%28if%20known%29%3A%0A%0AWhen%20I%20need%20it%20by%3A%0A%0AI%27ll%20attach%20photos%20or%20sketches%20if%20I%20have%20them.%0A%0AThanks%2C%0A">Get a quote</a>
+    </div>
+  </section>
   </main>
   <footer class="site-footer">
-    <p>TG3D &middot; Blue Mountains, NSW &middot; <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    <div class="wrap">
+      <p>TG3D &ndash; Design Print Carve. Blue Mountains, NSW.</p>
+      <p><a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    </div>
   </footer>
 </body>
 </html>

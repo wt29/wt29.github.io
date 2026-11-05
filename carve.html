@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TG3D - Carve: CNC carved signs, plaques and animal homes</title>
   <meta name="description" content="CNC carving by TG3D: possum, microbat and parrot nesting boxes, carved aluminium plaques, street libraries and community garden signs.">
-  <meta name="theme-color" content="#1b1f23">
+  <meta name="theme-color" content="#101a45">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TG3D">
   <meta property="og:title" content="TG3D - Carve: CNC carved signs, plaques and animal homes">
   <meta property="og:description" content="CNC carving by TG3D: possum, microbat and parrot nesting boxes, carved aluminium plaques, street libraries and community garden signs.">
   <link rel="icon" href="img/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+  <link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R99PM7PTJH"></script>
@@ -28,9 +27,10 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
-      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home" width="544" height="424"></a>
+      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home - Design Print Carve" width="544" height="424"></a>
       <a href="index.html">Home</a>
       <a href="design.html">Design</a>
+      <a href="print.html">Print</a>
       <a href="carve.html" aria-current="page">Carve</a>
       <a href="disability.html">Disability</a>
       <a href="education.html">Education</a>
@@ -38,50 +38,69 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <div class="page-title">
-    <img src="img/logo.png" alt="" width="544" height="424">
-    <h1>Carve</h1>
-  </div>
   <main id="main">
-    <table class="projects">
-      <tr>
-        <td>
-          <h5>Animal homes</h5>
-          <img src="img/possumBoxes.jpg" alt="Carved possum nesting boxes" width="1200" height="1200">
-          <br>
-          <img src="img/microbat-home.jpg" alt="Microbat home" width="825" height="1046" loading="lazy">
-        </td>
-        <td>
-          <p>Boxes for Ringtail/Brushtail possums. Microbat habitat. Pardalote Home</p>
-          <p>It features carved possum motifs, a perch that extends inside to allow juveniles to exit and an innovative separate mount to make locating the box easier and safer.</p>
-          <p>Designed in Fusion 360 and CNC cut. These boxes slots together easily with pre-drilled screw holes.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <h5>Carved aluminium plaque</h5>
-          <img src="img/Plaque800x600.jpg" alt="CNC carved aluminium memorial plaque" width="800" height="487" loading="lazy">
-        </td>
-        <td><p>CNC Carved from aluminium, the sign provides a durable, long lasting memorial.</p></td>
-      </tr>
-      <tr>
-        <td>
-          <h5>Street library</h5>
-          <img src="img/StreetLibrary.jpg" alt="Street library with carved and printed signage" width="800" height="689" loading="lazy">
-        </td>
-        <td><p>Featuring 3D carved and printed signage, this street library is a well loved community asset</p></td>
-      </tr>
-      <tr>
-        <td>
-          <h5>Garden Signs</h5>
-          <img src="img/signs.jpg" alt="CNC carved signs for the community garden" width="800" height="600" loading="lazy">
-        </td>
-        <td><p>A selection of CNC carved signs for the local community garden. Sorry about the, since repaired, deck.</p></td>
-      </tr>
-    </table>
+  <div class="page-head">
+    <div class="wrap">
+      <h1>CNC carving</h1>
+      <p class="lead">Signs, plaques and animal homes, designed in Fusion 360 and carved in wood, plastic and aluminium.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <article class="project">
+      <div class="project-media">
+        <img src="img/possumBoxes.jpg" alt="Carved plywood possum nesting boxes" width="1200" height="1200">
+        <img src="img/microbat-home.jpg" alt="Microbat home" width="825" height="1046" loading="lazy">
+      </div>
+      <div class="project-body">
+        <h2>Animal homes</h2>
+        <p>Boxes for Ringtail/Brushtail possums. Microbat habitat. Pardalote home.</p>
+        <p>It features carved possum motifs, a perch that extends inside to allow juveniles to exit and an innovative separate mount to make locating the box easier and safer.</p>
+        <p>Designed in Fusion 360 and CNC cut. These boxes slot together easily with pre-drilled screw holes. <a href="resources.html">Assembly instructions are on the Resources page.</a></p>
+      </div>
+    </article>
+    <article class="project project--flip">
+      <div class="project-media">
+        <img src="img/Plaque800x600.jpg" alt="CNC carved aluminium memorial plaque" width="800" height="487" loading="lazy">
+      </div>
+      <div class="project-body">
+        <h2>Carved aluminium plaque</h2>
+        <p>CNC carved from aluminium, the sign provides a durable, long lasting memorial.</p>
+      </div>
+    </article>
+    <article class="project">
+      <div class="project-media">
+        <img src="img/StreetLibrary.jpg" alt="Street library with carved and printed signage" width="800" height="689" loading="lazy">
+      </div>
+      <div class="project-body">
+        <h2>Street library</h2>
+        <p>Featuring 3D carved and printed signage, this street library is a well loved community asset.</p>
+      </div>
+    </article>
+    <article class="project project--flip">
+      <div class="project-media">
+        <img src="img/signs.jpg" alt="CNC carved signs for the community garden" width="800" height="600" loading="lazy">
+      </div>
+      <div class="project-body">
+        <h2>Garden signs</h2>
+        <p>A selection of CNC carved signs for the local community garden. Sorry about the, since repaired, deck.</p>
+      </div>
+    </article>
+  </div>
+  <section class="band" aria-labelledby="band-title">
+    <div class="wrap band-inner">
+      <div>
+        <h2 id="band-title">Got an idea?</h2>
+        <p>Tell us what you need and we'll quote it. Email <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+      </div>
+      <a class="btn btn-primary" href="mailto:tony@tg3d.com.au?subject=Quote%20request&amp;body=Hi%20Tony%2C%0A%0AI%27d%20like%20a%20quote%20for%3A%0A%0AWhat%20I%20need%20%28design%2C%203D%20print%2C%20CNC%20carve%29%3A%0A%0AWhat%20it%27s%20for%3A%0A%0ASize%2C%20material%20or%20colour%20%28if%20known%29%3A%0A%0AWhen%20I%20need%20it%20by%3A%0A%0AI%27ll%20attach%20photos%20or%20sketches%20if%20I%20have%20them.%0A%0AThanks%2C%0A">Get a quote</a>
+    </div>
+  </section>
   </main>
   <footer class="site-footer">
-    <p>TG3D &middot; Blue Mountains, NSW &middot; <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    <div class="wrap">
+      <p>TG3D &ndash; Design Print Carve. Blue Mountains, NSW.</p>
+      <p><a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    </div>
   </footer>
 </body>
 </html>

@@ -3,19 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TG3D - One stop shop for all things 3D</title>
-  <meta name="description" content="TG3D offers 3D design, 3D printing and CNC carving from the Blue Mountains, NSW. Custom prototypes, disability aids, education projects and more.">
-  <meta name="theme-color" content="#1b1f23">
+  <title>TG3D - 3D design, 3D printing and CNC carving in the Blue Mountains</title>
+  <meta name="description" content="Custom 3D design, 3D printing and CNC carving from the Blue Mountains, NSW. Get a quote for prototypes, signs, plaques, nesting boxes and disability aids.">
+  <meta name="theme-color" content="#101a45">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TG3D">
-  <meta property="og:title" content="TG3D - One stop shop for all things 3D">
-  <meta property="og:description" content="TG3D offers 3D design, 3D printing and CNC carving from the Blue Mountains, NSW. Custom prototypes, disability aids, education projects and more.">
+  <meta property="og:title" content="TG3D - 3D design, 3D printing and CNC carving in the Blue Mountains">
+  <meta property="og:description" content="Custom 3D design, 3D printing and CNC carving from the Blue Mountains, NSW. Get a quote for prototypes, signs, plaques, nesting boxes and disability aids.">
   <meta name="ahrefs-site-verification" content="db21a6de58fc96841b72598bf801ea25ad34c9e5d851a9620fcf209752e9cb0e">
   <link rel="icon" href="img/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+  <link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "TG3D",
+  "description": "3D design, 3D printing and CNC carving.",
+  "url": "https://wt29.github.io/",
+  "email": "tony@tg3d.com.au",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Blue Mountains",
+    "addressRegion": "NSW",
+    "addressCountry": "AU"
+  },
+  "sameAs": [
+    "https://www.facebook.com/TG3DDesign",
+    "https://www.ebay.com.au/usr/wt29",
+    "https://www.etsy.com/au/shop/Tonys3DPrint"
+  ]
+}</script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R99PM7PTJH"></script>
   <script>
@@ -29,9 +47,10 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
-      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home" width="544" height="424"></a>
+      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home - Design Print Carve" width="544" height="424"></a>
       <a href="index.html" aria-current="page">Home</a>
       <a href="design.html">Design</a>
+      <a href="print.html">Print</a>
       <a href="carve.html">Carve</a>
       <a href="disability.html">Disability</a>
       <a href="education.html">Education</a>
@@ -39,39 +58,152 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <div class="page-title">
-    <img src="img/logo.png" alt="" width="544" height="424">
-    <h1>TG3D: 3D design, printing and CNC carving</h1>
-  </div>
   <main id="main">
-    <p>Your one-stop-shop for all things 3D!</p>
-    <p>We specialize in providing high-quality 3D design, 3D printing, and 3D CNC carving services.</p>
-    <p>We can bring your ideas to life with our design services. Whether you need a custom prototype, product design, or a model printed, we have the expertise to create stunning and functional designs that meet your specifications.</p>
-    <p>We also offer a wide range of 3D printing options, including FDM and SLA printing. Our printing process uses the latest technology and materials, ensuring that your projects are completed to the highest standards.</p>
-    <p>In addition, we provide 3D CNC routing (carving) services to help you create designs in a variety of materials, including wood and plastic. Our CNC machines are capable of producing precise cuts and shapes.</p>
-    <p>At TG3D, we are dedicated to providing the highest level of customer service and quality.</p>
-    <p>Contact us today to learn more about our services and how we can help bring your 3D projects to life.</p>
-    <p>All our products and services are offered at competitive rates, with postage and handling extra dependent on destination and package size.</p>
-    <p>We have a particular interest in providing <a href="disability.html">disability aids</a> and <a href="education.html">education</a> support. If you have an idea for gadgets to improve quality of life for people with disabilities or an educational project (design tech for example), please get in touch. We can offer student, pensioner or community organisation discounts without quality compromise to support worthy endeavours.</p>
-    <p>We are located in the glorious Blue Mountains in New South Wales. <a href="contact.html">Contact us.</a></p>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 id="hero-title">Designed, 3D printed and CNC carved in the Blue Mountains.</h1>
+        <p class="lead">Custom parts, prototypes, signs and nesting boxes. Send us your idea and we'll quote it.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="mailto:tony@tg3d.com.au?subject=Quote%20request&amp;body=Hi%20Tony%2C%0A%0AI%27d%20like%20a%20quote%20for%3A%0A%0AWhat%20I%20need%20%28design%2C%203D%20print%2C%20CNC%20carve%29%3A%0A%0AWhat%20it%27s%20for%3A%0A%0ASize%2C%20material%20or%20colour%20%28if%20known%29%3A%0A%0AWhen%20I%20need%20it%20by%3A%0A%0AI%27ll%20attach%20photos%20or%20sketches%20if%20I%20have%20them.%0A%0AThanks%2C%0A">Get a quote</a>
+          <a class="btn btn-outline" href="#work">See our work</a>
+        </div>
+        <p class="note">Postage and handling are extra, depending on destination and package size.</p>
+      </div>
+      <figure class="hero-figure">
+        <div class="printed">
+          <img src="img/possumBoxes.jpg" alt="Plywood possum nesting box with a possum outline carved into the front" width="1200" height="1200">
+        </div>
+        <figcaption>A carved possum box, designed in Fusion 360 and cut on our CNC.</figcaption>
+      </figure>
+    </div>
+  </section>
 
-    <ul class="social">
-      <li>
-        <a class="icon-link facebook" href="https://www.facebook.com/TG3DDesign" aria-label="TG3D on Facebook"><img src="img/icons/facebook.svg" alt="" width="36" height="36"></a>
-        <span>Follow us on Facebook</span>
-      </li>
-      <li>
-        <a class="icon-link" href="https://www.ebay.com.au/usr/wt29" aria-label="TG3D on eBay"><img src="img/icons/ebay.svg" alt="" width="36" height="36"></a>
-        <span>Check out my listings on eBay - this is my preferred sales channel. It's a bit cheaper than Etsy too</span>
-      </li>
-      <li>
-        <a class="icon-link" href="https://www.etsy.com/au/shop/Tonys3DPrint" aria-label="TG3D on Etsy"><img src="img/icons/etsy.svg" alt="" width="36" height="36"></a>
-        <span>Visit my shop on Etsy</span>
-      </li>
-    </ul>
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <h2 id="work-title">What we make</h2>
+      <div class="services">
+        <article class="tile tile--lead">
+          <img src="img/StreetLibrary.jpg" alt="Turquoise street library with carved and printed signage" width="800" height="689" loading="lazy">
+          <div class="tile-body">
+            <h3>CNC carving</h3>
+            <p>Nesting boxes, memorial plaques, community signs and street libraries, carved in wood, plastic and aluminium.</p>
+            <a href="carve.html">See carved work</a>
+          </div>
+        </article>
+        <article class="tile tile--side">
+          <img src="img/RenderWithLens.png" alt="3D render of a car tail light shell" width="640" height="570" loading="lazy">
+          <div class="tile-body">
+            <h3>3D design</h3>
+            <p>Custom parts and prototypes modelled from your sketch or idea, with 3D models you can open and rotate.</p>
+            <a href="design.html">See our designs</a>
+          </div>
+        </article>
+        <article class="tile tile--side">
+          <img src="img/dustboot.jpg" alt="3D printed red and black dust boot on a CNC router" width="640" height="480" loading="lazy">
+          <div class="tile-body">
+            <h3>3D printing</h3>
+            <p>FDM and SLA printing for prototypes, custom aids and school projects.</p>
+            <a href="print.html">See printed work</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint" aria-labelledby="help-title">
+    <div class="wrap">
+      <h2 id="help-title">Making things that help</h2>
+      <p class="section-intro">We have a particular interest in disability aids and education support. If you have an idea for a gadget that improves quality of life, or a Design Tech project, please get in touch.</p>
+      <div class="community">
+        <div class="feature">
+          <img src="img/CartonOpener.png" alt="Red 3D printed device for opening long-life milk and juice cartons" width="743" height="574" loading="lazy">
+          <div>
+            <h3>Disability aids</h3>
+            <p>Gadgets that make daily life easier, like a milk carton opener that was featured at Makers Making Change.</p>
+            <a href="disability.html">See disability projects</a>
+          </div>
+        </div>
+        <div class="feature">
+          <img src="img/Cubes_800x600.jpg" alt="Grid of red and green 3D printed cubes with raised icons, made for a Design Tech student" width="800" height="600" loading="lazy">
+          <div>
+            <h3>Education</h3>
+            <p>Printing for Design Tech students and classrooms. We hold a current NSW Working with Children check (details on request).</p>
+            <a href="education.html">See education projects</a>
+          </div>
+        </div>
+      </div>
+      <p class="discount">Student, pensioner and community organisation discounts are available, without any compromise on quality.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title">How it works</h2>
+      <ol class="steps">
+        <li>
+          <h3>Tell us what you need</h3>
+          <p>Email a sketch, photos, measurements or just a description. Say whether it needs designing, printing or carving.</p>
+        </li>
+        <li>
+          <h3>Get a quote</h3>
+          <p>We reply with a price. Our rates are competitive.</p>
+        </li>
+        <li>
+          <h3>We make it</h3>
+          <p>Designed in Fusion 360, then 3D printed or CNC carved.</p>
+        </li>
+        <li>
+          <h3>We post it</h3>
+          <p>Postage and handling are extra, depending on destination and package size.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-tint" aria-labelledby="shops-title">
+    <div class="wrap">
+      <h2 id="shops-title">Buy ready-made</h2>
+      <div class="shops">
+        <div class="shop">
+          <span class="shop-icon"><img src="img/icons/ebay.svg" alt="" width="32" height="32"></span>
+          <div>
+            <h3><a href="https://www.ebay.com.au/usr/wt29">eBay</a></h3>
+            <p>Our preferred sales channel, and a bit cheaper than Etsy.</p>
+          </div>
+        </div>
+        <div class="shop">
+          <span class="shop-icon"><img src="img/icons/etsy.svg" alt="" width="32" height="32"></span>
+          <div>
+            <h3><a href="https://www.etsy.com/au/shop/Tonys3DPrint">Etsy</a></h3>
+            <p>Visit our shop on Etsy.</p>
+          </div>
+        </div>
+        <div class="shop">
+          <span class="shop-icon facebook"><img src="img/icons/facebook.svg" alt="" width="32" height="32"></span>
+          <div>
+            <h3><a href="https://www.facebook.com/TG3DDesign">Facebook</a></h3>
+            <p>Follow us for updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="band" aria-labelledby="band-title">
+    <div class="wrap band-inner">
+      <div>
+        <h2 id="band-title">Got an idea?</h2>
+        <p>Tell us what you need and we'll quote it. Email <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+      </div>
+      <a class="btn btn-primary" href="mailto:tony@tg3d.com.au?subject=Quote%20request&amp;body=Hi%20Tony%2C%0A%0AI%27d%20like%20a%20quote%20for%3A%0A%0AWhat%20I%20need%20%28design%2C%203D%20print%2C%20CNC%20carve%29%3A%0A%0AWhat%20it%27s%20for%3A%0A%0ASize%2C%20material%20or%20colour%20%28if%20known%29%3A%0A%0AWhen%20I%20need%20it%20by%3A%0A%0AI%27ll%20attach%20photos%20or%20sketches%20if%20I%20have%20them.%0A%0AThanks%2C%0A">Get a quote</a>
+    </div>
+  </section>
   </main>
   <footer class="site-footer">
-    <p>TG3D &middot; Blue Mountains, NSW &middot; <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    <div class="wrap">
+      <p>TG3D &ndash; Design Print Carve. Blue Mountains, NSW.</p>
+      <p><a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    </div>
   </footer>
 </body>
 </html>

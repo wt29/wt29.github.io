@@ -4,16 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact TG3D</title>
-  <meta name="description" content="Contact TG3D about 3D design, 3D printing or CNC carving. Email tony@tg3d.com.au.">
-  <meta name="theme-color" content="#1b1f23">
+  <meta name="description" content="Contact TG3D about 3D design, 3D printing or CNC carving. Email tony@tg3d.com.au for a quote.">
+  <meta name="theme-color" content="#101a45">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TG3D">
   <meta property="og:title" content="Contact TG3D">
-  <meta property="og:description" content="Contact TG3D about 3D design, 3D printing or CNC carving. Email tony@tg3d.com.au.">
+  <meta property="og:description" content="Contact TG3D about 3D design, 3D printing or CNC carving. Email tony@tg3d.com.au for a quote.">
   <link rel="icon" href="img/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+  <link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R99PM7PTJH"></script>
@@ -28,9 +27,10 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
-      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home" width="544" height="424"></a>
+      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home - Design Print Carve" width="544" height="424"></a>
       <a href="index.html">Home</a>
       <a href="design.html">Design</a>
+      <a href="print.html">Print</a>
       <a href="carve.html">Carve</a>
       <a href="disability.html">Disability</a>
       <a href="education.html">Education</a>
@@ -38,17 +38,41 @@
       <a href="contact.html" aria-current="page">Contact</a>
     </nav>
   </header>
-  <div class="page-title">
-    <img src="img/logo.png" alt="" width="544" height="424">
-    <h1>Contact</h1>
-  </div>
   <main id="main">
-    <p>You can contact TG3D via <a href="mailto:tony@tg3d.com.au">email</a> - tony@tg3d.com.au</p>
-    <p>My thanks to Michael at Teaching Tech - I've used his design as it is simple and functional: <a href="https://teachingtechYT.github.io">Teaching Tech</a></p>
-    <p>Fonts: <a href="https://fonts.google.com/specimen/Roboto" target="_blank" rel="noopener">Roboto</a>. Icons: <a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a> Free (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>).</p>
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Contact</h1>
+      <p class="lead">Email is the best way to reach us. Tell us what you need and we'll quote it.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="contact-grid">
+      <section>
+        <h2>Get a quote</h2>
+        <p>Email <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a> with as much of this as you know:</p>
+        <ul class="checklist">
+          <li>What you need: design, 3D printing, CNC carving, or a mix</li>
+          <li>What it's for</li>
+          <li>Size, material or colour</li>
+          <li>When you need it by</li>
+          <li>Photos or sketches, if you have them</li>
+        </ul>
+        <a class="btn btn-blue" href="mailto:tony@tg3d.com.au?subject=Quote%20request&amp;body=Hi%20Tony%2C%0A%0AI%27d%20like%20a%20quote%20for%3A%0A%0AWhat%20I%20need%20%28design%2C%203D%20print%2C%20CNC%20carve%29%3A%0A%0AWhat%20it%27s%20for%3A%0A%0ASize%2C%20material%20or%20colour%20%28if%20known%29%3A%0A%0AWhen%20I%20need%20it%20by%3A%0A%0AI%27ll%20attach%20photos%20or%20sketches%20if%20I%20have%20them.%0A%0AThanks%2C%0A">Get a quote</a>
+        <p style="margin-top:1.2em">We're in the Blue Mountains, NSW. Postage and handling are extra, depending on destination and package size.</p>
+      </section>
+      <aside class="credits">
+        <h2>Credits</h2>
+        <p>My thanks to Michael at Teaching Tech. I've used his design as it is simple and functional: <a href="https://teachingtechYT.github.io">Teaching Tech</a>.</p>
+        <p>Fonts: Bricolage Grotesque and Figtree (<a href="https://openfontlicense.org" target="_blank" rel="noopener">SIL Open Font Licence</a>). Icons: <a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a> Free (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>). Slider: <a href="https://splidejs.com" target="_blank" rel="noopener">Splide</a>.</p>
+      </aside>
+    </div>
+  </div>
   </main>
   <footer class="site-footer">
-    <p>TG3D &middot; Blue Mountains, NSW &middot; <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    <div class="wrap">
+      <p>TG3D &ndash; Design Print Carve. Blue Mountains, NSW.</p>
+      <p><a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    </div>
   </footer>
 </body>
 </html>

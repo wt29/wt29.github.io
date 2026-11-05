@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TG3D - Resources and downloads</title>
   <meta name="description" content="Free downloads from TG3D: assembly instructions for possum, parrot, microbat and pardalote boxes and the street library, plus a plywood safety data sheet.">
-  <meta name="theme-color" content="#1b1f23">
+  <meta name="theme-color" content="#101a45">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TG3D">
   <meta property="og:title" content="TG3D - Resources and downloads">
   <meta property="og:description" content="Free downloads from TG3D: assembly instructions for possum, parrot, microbat and pardalote boxes and the street library, plus a plywood safety data sheet.">
   <link rel="icon" href="img/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+  <link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R99PM7PTJH"></script>
@@ -28,9 +27,10 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
-      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home" width="544" height="424"></a>
+      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home - Design Print Carve" width="544" height="424"></a>
       <a href="index.html">Home</a>
       <a href="design.html">Design</a>
+      <a href="print.html">Print</a>
       <a href="carve.html">Carve</a>
       <a href="disability.html">Disability</a>
       <a href="education.html">Education</a>
@@ -38,25 +38,49 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <div class="page-title">
-    <img src="img/logo.png" alt="" width="544" height="424">
-    <h1>Resources</h1>
-  </div>
   <main id="main">
-    <ul class="downloads">
-      <li><a href="files/Possum.pdf" download>Possum box Assembly instructions</a> <span>(PDF, 491 KB)</span>
-        <p>Note: the Brushtail and Ringtail boxes assemble in the same way</p></li>
-      <li><a href="files/Parrot.pdf" download>Parrot nesting box Assembly instructions</a> <span>(PDF, 515 KB)</span></li>
-      <li><a href="files/StreetLibrary.pdf" download>Street Library Assembly instructions</a> <span>(PDF, 411 KB)</span></li>
-      <li><a href="files/microbat.pdf" download>Microbat box Assembly instructions</a> <span>(PDF, 315 KB)</span></li>
-      <li><a href="files/Pardalote.pdf" download>Pardalote box Assembly instructions</a> <span>(PDF, 565 KB)</span></li>
-      <li><a href="files/KokoonFix_HighRes_V04.zip" download>Kokoon Headphone fix</a> <span>(ZIP, 596 KB)</span></li>
-      <li><a href="files/PlywoodSDS.pdf" download>Plywood Safety Data Sheet</a> <span>(PDF, 182 KB)</span></li>
-      <li><a href="files/SUNLU%20PETG%20Basic.orca_filament" download>K1 Orca Sunlu PETG filament profile</a> <span>(Orca filament profile, 2 KB)</span></li>
-    </ul>
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Resources</h1>
+      <p class="lead">Assembly instructions for our boxes and street library, plus a safety data sheet and a printer profile.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <section class="download-group">
+      <h2>Assembly instructions</h2>
+      <ul class="downloads">
+      <li><a href="files/Possum.pdf" download>Possum box<span class="meta">PDF, 491 KB</span></a>
+        <p class="note">Note: the Brushtail and Ringtail boxes assemble in the same way.</p></li>
+      <li><a href="files/Parrot.pdf" download>Parrot nesting box<span class="meta">PDF, 515 KB</span></a></li>
+      <li><a href="files/StreetLibrary.pdf" download>Street library<span class="meta">PDF, 411 KB</span></a></li>
+      <li><a href="files/microbat.pdf" download>Microbat box<span class="meta">PDF, 315 KB</span></a></li>
+      <li><a href="files/Pardalote.pdf" download>Pardalote box<span class="meta">PDF, 565 KB</span></a></li>
+      </ul>
+    </section>
+    <section class="download-group">
+      <h2>Other downloads</h2>
+      <ul class="downloads">
+      <li><a href="files/KokoonFix_HighRes_V04.zip" download>Kokoon headphone fix<span class="meta">ZIP, 596 KB</span></a></li>
+      <li><a href="files/PlywoodSDS.pdf" download>Plywood safety data sheet<span class="meta">PDF, 182 KB</span></a></li>
+      <li><a href="files/SUNLU%20PETG%20Basic.orca_filament" download>K1 Orca Sunlu PETG filament profile<span class="meta">Orca filament profile, 2 KB</span></a></li>
+      </ul>
+    </section>
+  </div>
+  <section class="band" aria-labelledby="band-title">
+    <div class="wrap band-inner">
+      <div>
+        <h2 id="band-title">Got an idea?</h2>
+        <p>Tell us what you need and we'll quote it. Email <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+      </div>
+      <a class="btn btn-primary" href="mailto:tony@tg3d.com.au?subject=Quote%20request&amp;body=Hi%20Tony%2C%0A%0AI%27d%20like%20a%20quote%20for%3A%0A%0AWhat%20I%20need%20%28design%2C%203D%20print%2C%20CNC%20carve%29%3A%0A%0AWhat%20it%27s%20for%3A%0A%0ASize%2C%20material%20or%20colour%20%28if%20known%29%3A%0A%0AWhen%20I%20need%20it%20by%3A%0A%0AI%27ll%20attach%20photos%20or%20sketches%20if%20I%20have%20them.%0A%0AThanks%2C%0A">Get a quote</a>
+    </div>
+  </section>
   </main>
   <footer class="site-footer">
-    <p>TG3D &middot; Blue Mountains, NSW &middot; <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    <div class="wrap">
+      <p>TG3D &ndash; Design Print Carve. Blue Mountains, NSW.</p>
+      <p><a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    </div>
   </footer>
 </body>
 </html>

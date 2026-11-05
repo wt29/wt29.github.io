@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TG3D - Let us design something for you</title>
+  <title>TG3D - 3D design: custom parts, prototypes and models</title>
   <meta name="description" content="Custom 3D designs by TG3D: CNC dust boots, an ESP8266 weather station, instrument bezels and car tail light shells, with interactive 3D models to view.">
-  <meta name="theme-color" content="#1b1f23">
+  <meta name="theme-color" content="#101a45">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TG3D">
-  <meta property="og:title" content="TG3D - Let us design something for you">
+  <meta property="og:title" content="TG3D - 3D design: custom parts, prototypes and models">
   <meta property="og:description" content="Custom 3D designs by TG3D: CNC dust boots, an ESP8266 weather station, instrument bezels and car tail light shells, with interactive 3D models to view.">
   <link rel="icon" href="img/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+  <link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R99PM7PTJH"></script>
@@ -28,9 +27,10 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
-      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home" width="544" height="424"></a>
+      <a class="brand" href="index.html"><img src="img/logo.png" alt="TG3D home - Design Print Carve" width="544" height="424"></a>
       <a href="index.html">Home</a>
       <a href="design.html" aria-current="page">Design</a>
+      <a href="print.html">Print</a>
       <a href="carve.html">Carve</a>
       <a href="disability.html">Disability</a>
       <a href="education.html">Education</a>
@@ -38,49 +38,64 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <div class="page-title">
-    <img src="img/logo.png" alt="" width="544" height="424">
-    <h1>Design</h1>
-  </div>
   <main id="main">
-    <h2>Some of our designs. Click an image to view the 3D model.</h2>
-    <table class="projects">
-      <tr>
-        <td>
-          <h5>Dust boot and assorted vacuum hose adapters</h5>
-          <a href="https://hotmail198486.autodesk360.com/shares/public/SHd38bfQT1fb47330c995a1690aca4ea154f?mode=embed" target="_blank" rel="noopener"><img src="img/dustboot.jpg" alt="CNC dust boot - open the 3D model" width="640" height="480"></a>
-        </td>
-        <td><p>I needed a dust collection mechanism for my CNC. This clamps to the Makita router and provides an adapter to my Ryobi shop vac via a cyclone dust extractor</p></td>
-      </tr>
-      <tr>
-        <td>
-          <h5>Full function Weather Station with internet logging</h5>
-          <a href="https://hotmail198486.autodesk360.com/shares/public/SHd38bfQT1fb47330c9931a8460f9db1d867?mode=embed" target="_blank" rel="noopener"><img src="img/WeatherStation640x480.jpg" alt="Weather station - open the 3D model" width="640" height="505" loading="lazy"></a>
-        </td>
-        <td>
-          <p>This weather station has an anemometer, wind direction and rain gauge. It is entirely 3D printed. It features integrated ESP8266 electronics and logs to a remote server using the EMONCMS suite.</p>
-          <p>Source code for the <a href="https://github.com/wt29/Anemometer">weather station</a> and other projects</p>
-          <p>There is also code for an <a href="https://github.com/wt29/IotTemp_Basic">ESP8266 temperature, humidity, TVOC and CO2 monitoring system</a></p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <h5>Instrument Bezel for custom truck</h5>
-          <a href="https://hotmail198486.autodesk360.com/shares/public/SHd38bfQT1fb47330c99fb5f4a3928b1c91d?mode=embed" target="_blank" rel="noopener"><img src="img/InstrumentBezel.png" alt="Custom instrument bezel - open the 3D model" width="640" height="480" loading="lazy"></a>
-        </td>
-        <td><p>This is a commissioned design and provides a bezel for a modern instrument cluster in a custom truck</p></td>
-      </tr>
-      <tr>
-        <td>
-          <h5>Tail light shell for car</h5>
-          <a href="https://hotmail198486.autodesk360.com/shares/public/SHd38bfQT1fb47330c9924e83835f29783dc?mode=embed" target="_blank" rel="noopener"><img src="img/RenderWithLens.png" alt="Car tail light shell - open the 3D model" width="640" height="570" loading="lazy"></a>
-        </td>
-        <td><p>Another custom design - this replicates the tail light on a Ferrari 206 Dino SP</p></td>
-      </tr>
-    </table>
+  <div class="page-head">
+    <div class="wrap">
+      <h1>3D design</h1>
+      <p class="lead">Custom designs from first idea to finished part. Open any 3D model to rotate and inspect it.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <article class="project">
+      <div class="project-media"><a href="https://hotmail198486.autodesk360.com/shares/public/SHd38bfQT1fb47330c995a1690aca4ea154f?mode=embed" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/dustboot.jpg" alt="3D printed red dust boot on a CNC router" width="640" height="480"></a></div>
+      <div class="project-body">
+        <h2>Dust boot and assorted vacuum hose adapters</h2>
+        <p>I needed a dust collection mechanism for my CNC. This clamps to the Makita router and provides an adapter to my Ryobi shop vac via a cyclone dust extractor</p>
+        <a class="model-link" href="https://hotmail198486.autodesk360.com/shares/public/SHd38bfQT1fb47330c995a1690aca4ea154f?mode=embed" target="_blank" rel="noopener">View the 3D model<span class="sr-only"> of the dust boot (opens in a new tab)</span></a>
+      </div>
+    </article>
+    <article class="project project--flip">
+      <div class="project-media"><a href="https://hotmail198486.autodesk360.com/shares/public/SHd38bfQT1fb47330c9931a8460f9db1d867?mode=embed" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/WeatherStation640x480.jpg" alt="Render of the 3D printed weather station parts" width="640" height="505" loading="lazy"></a></div>
+      <div class="project-body">
+        <h2>Full function weather station with internet logging</h2>
+        <p>This weather station has an anemometer, wind direction and rain gauge. It is entirely 3D printed. It features integrated ESP8266 electronics and logs to a remote server using the EMONCMS suite.</p>
+        <p>Source code for the <a href="https://github.com/wt29/Anemometer">weather station</a> and other projects.</p>
+        <p>There is also code for an <a href="https://github.com/wt29/IotTemp_Basic">ESP8266 temperature, humidity, TVOC and CO2 monitoring system</a>.</p>
+        <a class="model-link" href="https://hotmail198486.autodesk360.com/shares/public/SHd38bfQT1fb47330c9931a8460f9db1d867?mode=embed" target="_blank" rel="noopener">View the 3D model<span class="sr-only"> of the weather station (opens in a new tab)</span></a>
+      </div>
+    </article>
+    <article class="project">
+      <div class="project-media"><a href="https://hotmail198486.autodesk360.com/shares/public/SHd38bfQT1fb47330c99fb5f4a3928b1c91d?mode=embed" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/InstrumentBezel.png" alt="Render of a curved metal instrument bezel" width="640" height="480" loading="lazy"></a></div>
+      <div class="project-body">
+        <h2>Instrument bezel for a custom truck</h2>
+        <p>This is a commissioned design and provides a bezel for a modern instrument cluster in a custom truck</p>
+        <a class="model-link" href="https://hotmail198486.autodesk360.com/shares/public/SHd38bfQT1fb47330c99fb5f4a3928b1c91d?mode=embed" target="_blank" rel="noopener">View the 3D model<span class="sr-only"> of the instrument bezel (opens in a new tab)</span></a>
+      </div>
+    </article>
+    <article class="project project--flip">
+      <div class="project-media"><a href="https://hotmail198486.autodesk360.com/shares/public/SHd38bfQT1fb47330c9924e83835f29783dc?mode=embed" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/RenderWithLens.png" alt="Render of a car tail light shell with an amber lens" width="640" height="570" loading="lazy"></a></div>
+      <div class="project-body">
+        <h2>Tail light shell for a car</h2>
+        <p>Another custom design - this replicates the tail light on a Ferrari 206 Dino SP</p>
+        <a class="model-link" href="https://hotmail198486.autodesk360.com/shares/public/SHd38bfQT1fb47330c9924e83835f29783dc?mode=embed" target="_blank" rel="noopener">View the 3D model<span class="sr-only"> of the tail light shell (opens in a new tab)</span></a>
+      </div>
+    </article>
+  </div>
+  <section class="band" aria-labelledby="band-title">
+    <div class="wrap band-inner">
+      <div>
+        <h2 id="band-title">Got an idea?</h2>
+        <p>Tell us what you need and we'll quote it. Email <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+      </div>
+      <a class="btn btn-primary" href="mailto:tony@tg3d.com.au?subject=Quote%20request&amp;body=Hi%20Tony%2C%0A%0AI%27d%20like%20a%20quote%20for%3A%0A%0AWhat%20I%20need%20%28design%2C%203D%20print%2C%20CNC%20carve%29%3A%0A%0AWhat%20it%27s%20for%3A%0A%0ASize%2C%20material%20or%20colour%20%28if%20known%29%3A%0A%0AWhen%20I%20need%20it%20by%3A%0A%0AI%27ll%20attach%20photos%20or%20sketches%20if%20I%20have%20them.%0A%0AThanks%2C%0A">Get a quote</a>
+    </div>
+  </section>
   </main>
   <footer class="site-footer">
-    <p>TG3D &middot; Blue Mountains, NSW &middot; <a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    <div class="wrap">
+      <p>TG3D &ndash; Design Print Carve. Blue Mountains, NSW.</p>
+      <p><a href="mailto:tony@tg3d.com.au">tony@tg3d.com.au</a></p>
+    </div>
   </footer>
 </body>
 </html>
