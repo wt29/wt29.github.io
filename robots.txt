@@ -1,1 +1,4 @@
 User-agent: *
+Allow: /
+
+Sitemap: https://tg3d.com.au/sitemap.xml
