@@ -140,7 +140,7 @@ p { margin: 0 0 1em; max-width: 68ch; }
 
 .hero-figure { margin: 0; }
 .hero-figure .printed { border-radius: 8px; overflow: hidden; border: 2px solid rgba(255,255,255,.25); background: #000; }
-.hero-figure img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+.hero-figure img { width: 100%; height: auto; }
 .hero-figure figcaption { margin-top: 10px; font-size: 0.9rem; color: var(--on-dark); }
 
 /* The one animated moment: the photo "prints" upward in 24 layers. */
