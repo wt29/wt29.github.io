@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wt29.github.io/sitemap.xml
+Sitemap: https://tg3d.com.au/sitemap.xml
