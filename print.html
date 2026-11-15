@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="text-scale" content="scale">
   <title>TG3D - 3D printing: examples of our work</title>
   <meta name="description" content="Examples of 3D printed designs by TG3D: CNC clamps, a router dust boot, Audi switch caps and Anderson plug covers.">
   <meta name="theme-color" content="#101a45">
@@ -23,7 +24,7 @@
   <link rel="stylesheet" href="css/splide-core.min.css">
   <link rel="stylesheet" href="css/splide-skyblue.min.css">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R99PM7PTJH"></script>
+  <script async fetchpriority="low" src="https://www.googletagmanager.com/gtag/js?id=G-R99PM7PTJH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -58,19 +59,19 @@
       <div class="splide__track">
         <ul class="splide__list">
           <li class="splide__slide">
-            <img src="img/CNCClamps.jpg" alt="CNC clamps, push pins and rails" width="640" height="480">
+            <img src="img/CNCClamps.jpg" alt="CNC clamps, push pins and rails" width="640" height="480" fetchpriority="high">
             <div class="splide__txt">CNC clamps, push pins and rails. Allows easy hold-down of work for carving. The clamps are angled down 5 degrees to assist in hold-down.</div>
           </li>
           <li class="splide__slide">
-            <img src="img/dustboot.jpg" alt="Printed dust boot" width="640" height="480">
+            <img src="img/dustboot.jpg" alt="Printed dust boot" width="640" height="480" fetchpriority="low" loading="lazy">
             <div class="splide__txt">This is a printed dust boot. It is designed to suit a Makita trim router. The bottom plate is held on by 4mm magnets.</div>
           </li>
           <li class="splide__slide">
-            <img src="img/AudiA4SwitchBlock.jpg" alt="Audi A4 switch block" width="640" height="480">
+            <img src="img/AudiA4SwitchBlock.jpg" alt="Audi A4 switch block" width="640" height="480" fetchpriority="low" loading="lazy">
             <div class="splide__txt">This was a long running project which took over 70 iterations to get right. In the end, a completely different design tack was required.</div>
           </li>
           <li class="splide__slide">
-            <img src="img/DoubleAnderson.jpg" alt="Double Anderson plug cover" width="640" height="480">
+            <img src="img/DoubleAnderson.jpg" alt="Double Anderson plug cover" width="640" height="480" fetchpriority="low" loading="lazy">
             <div class="splide__txt">Holds 2x 50A Anderson plugs. It features dust caps secured by stainless wire.</div>
           </li>
         </ul>
